@@ -305,7 +305,7 @@ def main(exp, args):
     elif args.demo == "video" or args.demo == "webcam":
         imageflow_demo(predictor, vis_folder, current_time, args)
 
-#python tools/demo.py image -f exps/yolox_tiny.py -c YOLOX_outputs/yolox_tiny/best_ckpt.pth --path ../datas/fish_dataset/images --conf 0.25 --nms 0.45 --tsize 640 --save_result --device gpu
+#python yolox_tools/demo.py image -f exps/yolox_tiny.py -c YOLOX_outputs/yolox_tiny/best_ckpt.pth --path ../datas/fish_dataset/images --conf 0.25 --nms 0.45 --tsize 640 --save_result --device gpu
 if __name__ == "__main__":
     args = make_parser().parse_args()
     exp = get_exp(args.exp_file, args.name)

@@ -109,7 +109,7 @@ def main(exp, args):
     trainer = Trainer(exp, args)
     trainer.train()
 
-#python tools/train.py -f exps/yolox_tiny.py -d 1 -b 8 --fp16 -o -c weights/yolox_tiny.pth
+#python yolox_tools/train.py -f exps/yolox_tiny.py -d 1 -b 4 --fp16 -c weights/yolox_tiny.pth
 if __name__ == "__main__":
     args = make_parser().parse_args()
     exp = get_exp(args.exp_file, args.name)

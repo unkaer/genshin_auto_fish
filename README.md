@@ -69,6 +69,20 @@ YOLOX部分因为打标签太累所以用半监督学习。标注少量样本后
 python yolox_tools/train.py -f yolox/exp/yolox_tiny_fish.py -d 1 -b 8 --fp16 -o -c weights/yolox_tiny.pth
 ```
 
+!!!一直保错？GPU显存太小
+-b 4 
+不要 -o
+保存的时候出错
+numpy.float64' object cannot be interpreted as an integer
+
+pip uninstall pycocotools
+pip install pycocotools-windows
+
+保错
+[Errno 32] Broken pipe
+
+self.data_num_workers = 1
+
 # DQN训练工作流程
 控制力度使用强化学习模型DQN进行训练。两次进度的差值作为reward为模型提供学习方向。模型与环境间交互式学习。
 
