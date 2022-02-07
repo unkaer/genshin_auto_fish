@@ -5,4 +5,13 @@ cmd.exe.lnk
 weights/*
 yolox/data/fish-dataset/*
 img_tmp/*
+YOLOX_outputs/yolox_tiny_fish/train_log.txt
+build/*
+*.pyd
+yolox.egg-info/PKG-INFO
+yolox.egg-info/SOURCES.txt
+yolox.egg-info/top_level.txt
+yolox.egg-info/dependency_links.txt
 *.pyc
+output/*
+YOLOX_outputs/*
